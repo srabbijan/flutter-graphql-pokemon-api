@@ -1,16 +1,40 @@
 # safewheel
+base url: https://graphql-pokemon2.vercel.app
+List Page 
+ query {
+  pokemons(first:20) {
+    id
+    name
+    weight {
+      minimum
+      maximum
+    }
+    height {
+      minimum
+      maximum
+    }
+    classification
+    image
+  } 
+}
+![image](https://github.com/srabbijan/flutter-graphql-pokemon-api/assets/32338236/8bcf089d-431b-486a-a0fb-168e353eb536)
+Details page 
+query {
+  pokemon(id:"UG9rZW1vbjowMDE=",name:"Bulbasaur"){
+    id
+    name
+    weight {
+      minimum
+      maximum
+    }
+    height {
+      minimum
+      maximum
+    }
+    classification
+    image
+  }
+}
+![image](https://github.com/srabbijan/flutter-graphql-pokemon-api/assets/32338236/48b8928d-2bf9-40fa-88f2-761a588e18be)
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
